@@ -1,0 +1,10 @@
+[build]
+  base = "asin-tool"
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/asin"
+  to = "/.netlify/functions/asin-proxy"
+  status = 200
+  force = true
